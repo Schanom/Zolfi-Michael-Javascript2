@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inter2</title>
+</head>
+<body>
+    <script  type="text/javascript">
+       var st =[];
+       var i=0;
+        
+        
+        while(i<3){
+            ch =prompt("enter your markts ");
+            c=parseInt(ch);
+            if (typeof(c) == 'number') 
+            {
+            document.write("please inster just numbers");
+            }
+            else
+               {  st[i]=ch;
+             i++;
+                }
+            
+            
+        }
+        function sum(st)
+        {sm=0;
+            for(j=0;j<st.length;j++){
+                
+                sm=sm+parseInt(st[j]);
+                }
+        return sm;
+        }
+            
+            document.write("the sum of your markts is:" + sum(st) + "but your average is :" + sum(st)/3 );   
+    </script>
+    </body>
+</html>

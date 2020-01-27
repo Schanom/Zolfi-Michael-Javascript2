@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inter2</title>
+</head>
+<body>
+    <script  type="text/javascript">
+        
+        dd =new Date;
+        
+ var mont =["January","February","March","April","May","June","July","Augest","Septemper","October","November","December"]
+  var wee =["Sunday","Monday","Tuesday","Wedensday","Thursday","Friday","Satarday"]
+        function tmrw(dd,mont){
+        d = dd.getDate();
+        m =dd.getMonth();
+        y =dd.getFullYear();
+        tag =dd.getDay();
+            
+        mm=mont[m];
+            tt=wee[--tag];
+                    
+             
+document.write("the date of today is "+ tt + "  " + --d + "  "  + "  " + mm + "  " +  y);
+            
+        }
+        tmrw(dd,mont);
+        
+    </script>
+    </body>
+</html>
