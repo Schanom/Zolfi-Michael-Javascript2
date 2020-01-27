@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Basic 2 and 3</h1>
+	<script type="text/javascript" charset="utf-8" async defer>
+		
+
+
+		 birthYear = prompt("Enter birth year:");
+		 d = new Date();
+		 currentYear = d.getFullYear();
+
+		 function yourAge(birthYear, currentYear){
+		 	var your_Age = parseInt(currentYear) - parseInt(birthYear);
+
+		 	return your_Age;
+		 }
+
+		 var youS = (yourAge(birthYear, currentYear));
+
+
+		 function youAre(youS){
+		 	document.write("You are either " + youS + " or " + ++youS + "Years old");
+		 }
+			youAre(youS);
+	</script>
+</body>
+</html>
